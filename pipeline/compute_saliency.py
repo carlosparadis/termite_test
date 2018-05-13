@@ -151,8 +151,8 @@ def main():
 			logging_level = config.getint( 'Misc', 'logging' )
 	
 	# Read in user-specifiec values from the program arguments
-	#if args.data_path is not None:
-		data_path = "/Users/carlos/Downloads/Old Downloads/termite-master/Termite_internal_files/"
+	if args.data_path is not None:
+		data_path = args.data_path
 	if args.logging is not None:
 		logging_level = args.logging
 	
