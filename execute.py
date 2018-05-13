@@ -58,17 +58,17 @@ class Execute( object ):
 		assert number_of_seriated_terms is not None
 		
 		self.logger.info( '--------------------------------------------------------------------------------' )
-		self.logger.info( 'Tokenizing source corpus...'                                                      )
+		#self.logger.info( 'Tokenizing source corpus...'                                                      )
 		self.logger.info( '    corpus_path = %s (%s)', corpus_path, corpus_format                            )
 		self.logger.info( '    model_path = %s (%s)', model_path, model_library                              )
 		self.logger.info( '    data_path = %s', data_path                                                    )
 		self.logger.info( '    num_topics = %d', num_topics                                                  )
 		self.logger.info( '    number_of_seriated_terms = %s', number_of_seriated_terms                      )
 		self.logger.info( '--------------------------------------------------------------------------------' )
-		self.logger.info( 'Current time = {}'.format( time.ctime() ) )
+		#self.logger.info( 'Current time = {}'.format( time.ctime() ) )
 		
-		Tokenize( self.logger.level ).execute( corpus_format, corpus_path, data_path, tokenization )
-		self.logger.info( 'Current time = {}'.format( time.ctime() ) )
+		# Tokenize( self.logger.level ).execute( corpus_format, corpus_path, data_path, tokenization )
+		# self.logger.info( 'Current time = {}'.format( time.ctime() ) )
 		
 		# if model_library == 'stmt':
 		# 	command = 'pipeline/train_stmt.sh {} {} {}'.format( data_path + '/tokens/tokens.txt', model_path, num_topics )
