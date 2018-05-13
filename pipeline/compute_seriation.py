@@ -91,7 +91,7 @@ class ComputeSeriation( object ):
 		preBest = []
 		postBest = []
 
-		for iteration in range(numSeriatedTerms):
+		for iteration in range(numSeriatedTerms) and candidateTerms:
 			print "Iteration no. ", iteration
 
 			addedTerm = 0
@@ -169,7 +169,7 @@ class ComputeSeriation( object ):
 		return (preBest, postBest, sorted(bestEnergies, key=itemgetter(1), reverse=True))
 
 	def iterate_eff( self, candidateTerms, term_ordering, term_iter_index, buffers, bestEnergies, iteration_no ):
-		maxEnergyChange = 0.0;
+		maxEnergyChange = -9999999999999999;
 		maxTerm = "";
 		maxPosition = 0;
 
@@ -187,6 +187,8 @@ class ComputeSeriation( object ):
 				candidateRank = self.termRank[candidate]
 				if candidateRank <= (len(term_ordering) + self.candidateSize):
 					current_energy_change = self.getEnergyChange(candidate, position, term_ordering, current_buffer, iteration_no)
+					#print "current_energy_change: "+str(current_energy_change)
+					#print "maxEnergyChange "+str(maxEnergyChange)
 					if current_energy_change > maxEnergyChange:
 						maxEnergyChange = current_energy_change
 						maxTerm = candidate
@@ -201,8 +203,13 @@ class ComputeSeriation( object ):
 		print "change in energy: ", maxEnergyChange
 		print "maxTerm: ", maxTerm
 		print "maxPosition: ", maxPosition
-		
+
+		#print "-----------"
 		candidateTerms.remove(maxTerm)
+		#print "Candidate Terms for following iteration: "
+		#print candidateTerms
+		#print "-----------"
+        
 
 		# update buffers
 		buf_score = 0
