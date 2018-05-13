@@ -133,7 +133,7 @@ class ComputeSaliency( object ):
 def main():
 	parser = argparse.ArgumentParser( description = 'Compute term saliency for TermiteVis.' )
 	parser.add_argument( 'config_file', type = str, default = None    , help = 'Path of Termite configuration file.' )
-	parser.add_argument( '--data-path', type = str, dest = 'data_path', help = 'Override data path.'                 )
+	#parser.add_argument( '--data-path', type = str, dest = 'data_path', help = 'Override data path.'                 )
 	parser.add_argument( '--logging'  , type = int, dest = 'logging'  , help = 'Override logging level.'             )
 	args = parser.parse_args()
 	
@@ -144,14 +144,15 @@ def main():
 	if args.config_file is not None:
 		config = ConfigParser.RawConfigParser()
 		config.read( args.config_file )
-		if config.has_section( 'Termite' ) and config.has_option( 'Termite', 'path' ):
-			data_path = config.get( 'Termite', 'path' )
+		#if config.has_section( 'Termite' ) and config.has_option( 'Termite', 'path' ):
+			#data_path = config.get( 'Termite', 'path' )
+			#data_path="/Users/riyachanduka/Documents/GitHub/termite-master/examples/Termite_internal_files/model"
 		if config.has_section( 'Misc' ) and config.has_option( 'Misc', 'logging' ):
 			logging_level = config.getint( 'Misc', 'logging' )
 	
 	# Read in user-specifiec values from the program arguments
-	if args.data_path is not None:
-		data_path = args.data_path
+	#if args.data_path is not None:
+		data_path = "/Users/riyachanduka/Documents/GitHub/termite-master/examples/Termite_internal_files/"
 	if args.logging is not None:
 		logging_level = args.logging
 	
