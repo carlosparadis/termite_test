@@ -1,0 +1,21 @@
+topic	weight
+Topic 0	3.12
+Topic 1	1.12
+Topic 4	1.12
+Topic 6	1.12
+Topic 8	1.12
+Topic 9	1.12
+Topic 10	1.12
+Topic 12	1.12
+Topic 15	1.12
+Topic 16	1.12
+Topic 17	1.12
+Topic 2	0.12
+Topic 3	0.12
+Topic 5	0.12
+Topic 7	0.12
+Topic 11	0.12
+Topic 13	0.12
+Topic 14	0.12
+Topic 18	0.12
+Topic 19	0.12

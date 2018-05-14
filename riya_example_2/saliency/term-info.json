@@ -1,0 +1,98 @@
+[
+  {
+    "distinctiveness": 1.228053318187704, 
+    "frequency": 2.1999999999999957, 
+    "rank": 0, 
+    "saliency": 2.7017173000129437, 
+    "term": "cow", 
+    "visibility": "default"
+  }, 
+  {
+    "distinctiveness": 1.8769220636473394, 
+    "frequency": 1.2000000000000002, 
+    "rank": 1, 
+    "saliency": 2.2523064763768077, 
+    "term": "big", 
+    "visibility": "default"
+  }, 
+  {
+    "distinctiveness": 1.8769220636473394, 
+    "frequency": 1.2000000000000002, 
+    "rank": 2, 
+    "saliency": 2.2523064763768077, 
+    "term": "farm", 
+    "visibility": "default"
+  }, 
+  {
+    "distinctiveness": 1.876922063647339, 
+    "frequency": 1.2000000000000002, 
+    "rank": 3, 
+    "saliency": 2.2523064763768073, 
+    "term": "1115", 
+    "visibility": "default"
+  }, 
+  {
+    "distinctiveness": 1.8769220636473396, 
+    "frequency": 1.2, 
+    "rank": 4, 
+    "saliency": 2.2523064763768073, 
+    "term": "bessy", 
+    "visibility": "default"
+  }, 
+  {
+    "distinctiveness": 1.8769220636473396, 
+    "frequency": 1.2, 
+    "rank": 5, 
+    "saliency": 2.2523064763768073, 
+    "term": "franklin", 
+    "visibility": "default"
+  }, 
+  {
+    "distinctiveness": 1.8769220636473396, 
+    "frequency": 1.2, 
+    "rank": 6, 
+    "saliency": 2.2523064763768073, 
+    "term": "jumped", 
+    "visibility": "default"
+  }, 
+  {
+    "distinctiveness": 1.8769220636473392, 
+    "frequency": 1.2000000000000002, 
+    "rank": 7, 
+    "saliency": 2.2523064763768073, 
+    "term": "look,", 
+    "visibility": "default"
+  }, 
+  {
+    "distinctiveness": 1.8769220636473392, 
+    "frequency": 1.2000000000000002, 
+    "rank": 8, 
+    "saliency": 2.2523064763768073, 
+    "term": "moon", 
+    "visibility": "default"
+  }, 
+  {
+    "distinctiveness": 1.8769220636473392, 
+    "frequency": 1.2000000000000002, 
+    "rank": 9, 
+    "saliency": 2.2523064763768073, 
+    "term": "next?", 
+    "visibility": "default"
+  }, 
+  {
+    "distinctiveness": 1.8769220636473396, 
+    "frequency": 1.2, 
+    "rank": 10, 
+    "saliency": 2.2523064763768073, 
+    "term": "text", 
+    "visibility": "default"
+  }, 
+  {
+    "distinctiveness": 1.0231684665520167, 
+    "frequency": 1.2000000000000002, 
+    "rank": 11, 
+    "saliency": 1.2278021598624203, 
+    "term": "i'm", 
+    "visibility": "default"
+  }
+]
